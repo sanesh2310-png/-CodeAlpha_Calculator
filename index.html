@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator — CodeAlpha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="machine">
+  <div class="brand-row">
+    <div class="brand">alpha<span>calc</span></div>
+    <div class="model">MODEL CA-01</div>
+  </div>
+
+  <div class="screen">
+    <div class="expression" id="expression" aria-hidden="true">&nbsp;</div>
+    <div class="result" id="result">0</div>
+  </div>
+
+  <div class="pad">
+    <button class="fn" data-action="clear">AC</button>
+    <button class="fn" data-action="backspace">⌫</button>
+    <button class="fn" data-action="percent">%</button>
+    <button class="op" data-action="operator" data-op="÷">÷</button>
+
+    <button data-action="number" data-num="7">7</button>
+    <button data-action="number" data-num="8">8</button>
+    <button data-action="number" data-num="9">9</button>
+    <button class="op" data-action="operator" data-op="×">×</button>
+
+    <button data-action="number" data-num="4">4</button>
+    <button data-action="number" data-num="5">5</button>
+    <button data-action="number" data-num="6">6</button>
+    <button class="op" data-action="operator" data-op="−">−</button>
+
+    <button data-action="number" data-num="1">1</button>
+    <button data-action="number" data-num="2">2</button>
+    <button data-action="number" data-num="3">3</button>
+    <button class="op" data-action="operator" data-op="+">+</button>
+
+    <button class="zero" data-action="number" data-num="0">0</button>
+    <button data-action="decimal">.</button>
+    <button class="eq" data-action="equals">=</button>
+  </div>
+
+  <div class="keyhint">keyboard: 0–9 · + − * / · enter · esc · backspace</div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
